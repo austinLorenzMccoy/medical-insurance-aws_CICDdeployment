@@ -1,0 +1,24 @@
+[ 2024-11-20 18:13:46,700 ] 18 root - INFO - Starting data ingestion
+[ 2024-11-20 18:13:46,704 ] 22 root - INFO - Dataset loaded successfully
+[ 2024-11-20 18:13:46,710 ] 29 root - INFO - Raw data saved successfully
+[ 2024-11-20 18:13:46,718 ] 38 root - INFO - Data ingestion completed
+[ 2024-11-20 18:13:46,722 ] 66 root - INFO - Preprocessing train and test datasets
+[ 2024-11-20 18:13:46,741 ] 17 root - INFO - Model Training Started
+[ 2024-11-20 18:13:46,741 ] 24 root - INFO - Train DataFrame Columns: Index(['num__age', 'num__bmi', 'num__children', 'num__age_bmi',
+       'num__smoker_bmi', 'cat__sex_male', 'cat__smoker_yes',
+       'cat__region_northwest', 'cat__region_southeast',
+       'cat__region_southwest', 'charges_log'],
+      dtype='object')
+[ 2024-11-20 18:13:46,741 ] 25 root - INFO - Train DataFrame Shape: (1070, 11)
+[ 2024-11-20 18:13:46,741 ] 26 root - INFO - Test DataFrame Columns: Index(['num__age', 'num__bmi', 'num__children', 'num__age_bmi',
+       'num__smoker_bmi', 'cat__sex_male', 'cat__smoker_yes',
+       'cat__region_northwest', 'cat__region_southeast',
+       'cat__region_southwest', 'charges_log'],
+      dtype='object')
+[ 2024-11-20 18:13:46,741 ] 27 root - INFO - Test DataFrame Shape: (268, 11)
+[ 2024-11-20 18:13:46,750 ] 56 root - INFO - R2 Score (Train): 0.7739
+[ 2024-11-20 18:13:46,751 ] 56 root - INFO - R2 Score (Test): 0.8171
+[ 2024-11-20 18:13:46,751 ] 56 root - INFO - RMSE (Train): 0.4333
+[ 2024-11-20 18:13:46,751 ] 56 root - INFO - RMSE (Test): 0.4055
+[ 2024-11-20 18:13:46,751 ] 56 root - INFO - MAE (Train): 0.2637
+[ 2024-11-20 18:13:46,751 ] 56 root - INFO - MAE (Test): 0.2531

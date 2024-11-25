@@ -1,0 +1,5 @@
+#!/Users/a/Documents/DataScience_World/Complete_ML_Bootcamp/Projects/ML_ENDtoEND/ml_env/bin/python3.10
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

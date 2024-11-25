@@ -1,0 +1,12 @@
+[ 2024-11-20 18:08:34,812 ] 22 root - INFO - Entered the data ingestion method or component
+[ 2024-11-20 18:08:34,816 ] 26 root - INFO - Read the dataset as dataframe
+[ 2024-11-20 18:08:34,822 ] 33 root - INFO - Raw data saved successfully
+[ 2024-11-20 18:08:34,823 ] 36 root - INFO - Train test split initiated
+[ 2024-11-20 18:08:34,831 ] 43 root - INFO - Ingestion of the data is completed
+[ 2024-11-20 18:08:34,836 ] 82 root - INFO - Read train and test data completed
+[ 2024-11-20 18:08:34,836 ] 84 root - INFO - Preprocessing train and test datasets
+[ 2024-11-20 18:08:34,839 ] 88 root - INFO - Obtaining preprocessing object
+[ 2024-11-20 18:08:34,839 ] 66 root - INFO - Preprocessor created with numeric features: ['age', 'bmi', 'children', 'age_bmi', 'smoker_bmi'] and categorical features: ['sex', 'smoker', 'region']
+[ 2024-11-20 18:08:34,841 ] 102 root - INFO - Applying preprocessing object on training and testing dataframes
+[ 2024-11-20 18:08:34,855 ] 118 root - INFO - Saving preprocessing object
+[ 2024-11-20 18:08:34,856 ] 22 root - INFO - Checking for missing columns in the data

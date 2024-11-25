@@ -1,0 +1,40 @@
+[ 2024-11-20 18:05:37,389 ] 22 root - INFO - Entered the data ingestion method or component
+[ 2024-11-20 18:05:37,414 ] 26 root - INFO - Read the dataset as dataframe
+[ 2024-11-20 18:05:37,421 ] 33 root - INFO - Raw data saved successfully
+[ 2024-11-20 18:05:37,421 ] 36 root - INFO - Train test split initiated
+[ 2024-11-20 18:05:37,430 ] 43 root - INFO - Ingestion of the data is completed
+[ 2024-11-20 18:05:37,434 ] 82 root - INFO - Read train and test data completed
+[ 2024-11-20 18:05:37,434 ] 84 root - INFO - Preprocessing train and test datasets
+[ 2024-11-20 18:05:37,437 ] 88 root - INFO - Obtaining preprocessing object
+[ 2024-11-20 18:05:37,438 ] 66 root - INFO - Preprocessor created with numeric features: ['age', 'bmi', 'children', 'age_bmi', 'smoker_bmi'] and categorical features: ['sex', 'smoker', 'region']
+[ 2024-11-20 18:05:37,439 ] 102 root - INFO - Applying preprocessing object on training and testing dataframes
+[ 2024-11-20 18:05:37,454 ] 118 root - INFO - Saving preprocessing object
+[ 2024-11-20 18:05:37,456 ] 28 root - INFO - Splitting training and testing input data
+[ 2024-11-20 18:05:37,467 ] 36 root - INFO - Feature Preprocessing Pipeline: ColumnTransformer(transformers=[('num',
+                                 Pipeline(steps=[('imputer', SimpleImputer()),
+                                                 ('scaler', StandardScaler())]),
+                                 ['age', 'bmi', 'children']),
+                                ('cat',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(fill_value='missing',
+                                                                strategy='constant')),
+                                                 ('onehot',
+                                                  OneHotEncoder(handle_unknown='ignore'))]),
+                                 ['sex', 'smoker', 'region'])])
+[ 2024-11-20 18:05:37,490 ] 45 root - INFO - Model Pipeline: Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer()),
+                                                                  ('scaler',
+                                                                   StandardScaler())]),
+                                                  ['age', 'bmi', 'children']),
+                                                 ('cat',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer(fill_value='missing',
+                                                                                 strategy='constant')),
+                                                                  ('onehot',
+                                                                   OneHotEncoder(handle_unknown='ignore'))]),
+                                                  ['sex', 'smoker',
+                                                   'region'])])),
+                ('regressor', LinearRegression())])
+[ 2024-11-20 18:05:37,490 ] 78 root - ERROR - Error occurred in model training: A given column is not a column of the dataframe
