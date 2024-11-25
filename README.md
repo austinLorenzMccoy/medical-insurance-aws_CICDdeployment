@@ -1,7 +1,6 @@
-# Medical Insurance Cost Prediction 🏥
+# Medical Insurance Cost AWS DEPLOYMENT 🏥
 
 ## Overview 📊
-This project implements a machine learning model to predict medical insurance costs based on demographic and health-related factors. Using a Linear Regression approach, the model analyzes features such as age, BMI, smoking status, and region to estimate individual insurance charges.
 
 [![Python 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5.2-orange.svg)](https://scikit-learn.org/stable/)
